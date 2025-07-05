@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RideShare - Dashboard</title>
+  <style>
+    body {
+      background: #020617;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      background: #0ea5e9;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0284c7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to your Dashboard</h1>
+  <div class="buttons">
+    <button class="btn" onclick="window.location.href='postRide.html'">Post a Ride</button>
+    <button class="btn" onclick="window.location.href='bookRide.html'">Book a Ride</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RideShare</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #020617; /* dark background */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #0ea5e9;
+    }
+
+    main {
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #0ea5e9;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">RideShare</div>
+    <nav>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Convenient and Affordable<br>Ride-Sharing Platform</h1>
+    <p>Welcome to RideShare, the ultimate platform for convenient and affordable rides. Sign up or log in to get started!</p>
+    <div class="buttons">
+      <button class="btn" onclick="window.location.href='signup.html'">Sign Up</button>
+      <button class="btn" onclick="window.location.href='login.html'">Log In</button>
+    </div>
+  </main>
+
+</body>
+</html>
